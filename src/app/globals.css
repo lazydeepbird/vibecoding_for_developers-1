@@ -7,6 +7,280 @@
   /* 기본 배경/전경 (기존 호환성 유지) */
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Typography Foundation - 피그마 파운데이션 기반 CSS 변수 */
+  /* 폰트 패밀리 */
+  --typography-font-pretendard: 'Pretendard', sans-serif;
+  --typography-font-suit: 'SUIT Variable', sans-serif;
+  
+  /* 폰트 웨이트 */
+  --typography-weight-regular: 400;
+  --typography-weight-medium: 500;
+  --typography-weight-semibold: 600;
+  --typography-weight-bold: 700;
+  --typography-weight-extrabold: 800;
+  
+  /* 웹 헤드라인 - 데스크톱 */
+  --typography-web-headline01-family-desktop: var(--typography-font-pretendard);
+  --typography-web-headline01-weight-desktop: var(--typography-weight-semibold);
+  --typography-web-headline01-size-desktop: 48px;
+  --typography-web-headline01-lineHeight-desktop: 60px;
+  
+  --typography-web-headline02-family-desktop: var(--typography-font-pretendard);
+  --typography-web-headline02-weight-desktop: var(--typography-weight-semibold);
+  --typography-web-headline02-size-desktop: 36px;
+  --typography-web-headline02-lineHeight-desktop: 48px;
+  
+  --typography-web-headline03-family-desktop: var(--typography-font-pretendard);
+  --typography-web-headline03-weight-desktop: var(--typography-weight-semibold);
+  --typography-web-headline03-size-desktop: 28px;
+  --typography-web-headline03-lineHeight-desktop: 36px;
+  
+  /* 헤드라인 - 데스크톱 */
+  --typography-headline01-family-desktop: var(--typography-font-pretendard);
+  --typography-headline01-weight-desktop: var(--typography-weight-bold);
+  --typography-headline01-size-desktop: 24px;
+  --typography-headline01-lineHeight-desktop: 32px;
+  
+  --typography-headline02-family-desktop: var(--typography-font-pretendard);
+  --typography-headline02-weight-desktop: var(--typography-weight-extrabold);
+  --typography-headline02-size-desktop: 22px;
+  --typography-headline02-lineHeight-desktop: 30px;
+  
+  --typography-headline03-family-desktop: var(--typography-font-pretendard);
+  --typography-headline03-weight-desktop: var(--typography-weight-bold);
+  --typography-headline03-size-desktop: 20px;
+  --typography-headline03-lineHeight-desktop: 28px;
+  
+  /* 타이틀 - 데스크톱 */
+  --typography-title01-family-desktop: var(--typography-font-pretendard);
+  --typography-title01-weight-desktop: var(--typography-weight-bold);
+  --typography-title01-size-desktop: 18px;
+  --typography-title01-lineHeight-desktop: 24px;
+  
+  --typography-title02-family-desktop: var(--typography-font-pretendard);
+  --typography-title02-weight-desktop: var(--typography-weight-bold);
+  --typography-title02-size-desktop: 16px;
+  --typography-title02-lineHeight-desktop: 22px;
+  
+  --typography-title03-family-desktop: var(--typography-font-pretendard);
+  --typography-title03-weight-desktop: var(--typography-weight-bold);
+  --typography-title03-size-desktop: 14px;
+  --typography-title03-lineHeight-desktop: 20px;
+  
+  --typography-subtitle01-family-desktop: var(--typography-font-pretendard);
+  --typography-subtitle01-weight-desktop: var(--typography-weight-semibold);
+  --typography-subtitle01-size-desktop: 14px;
+  --typography-subtitle01-lineHeight-desktop: 22px;
+  
+  --typography-subtitle02-family-desktop: var(--typography-font-pretendard);
+  --typography-subtitle02-weight-desktop: var(--typography-weight-semibold);
+  --typography-subtitle02-size-desktop: 12px;
+  --typography-subtitle02-lineHeight-desktop: 18px;
+  
+  /* 본문 - 데스크톱 */
+  --typography-body01-family-desktop: var(--typography-font-pretendard);
+  --typography-body01-weight-desktop: var(--typography-weight-medium);
+  --typography-body01-size-desktop: 16px;
+  --typography-body01-lineHeight-desktop: 24px;
+  
+  --typography-body02_m-family-desktop: var(--typography-font-pretendard);
+  --typography-body02_m-weight-desktop: var(--typography-weight-medium);
+  --typography-body02_m-size-desktop: 14px;
+  --typography-body02_m-lineHeight-desktop: 22px;
+  
+  --typography-body03-family-desktop: var(--typography-font-pretendard);
+  --typography-body03-weight-desktop: var(--typography-weight-medium);
+  --typography-body03-size-desktop: 12px;
+  --typography-body03-lineHeight-desktop: 18px;
+  
+  --typography-body01_regular-family-desktop: var(--typography-font-pretendard);
+  --typography-body01_regular-weight-desktop: var(--typography-weight-regular);
+  --typography-body01_regular-size-desktop: 16px;
+  --typography-body01_regular-lineHeight-desktop: 22px;
+  
+  --typography-body02_s-family-desktop: var(--typography-font-pretendard);
+  --typography-body02_s-weight-desktop: var(--typography-weight-regular);
+  --typography-body02_s-size-desktop: 14px;
+  --typography-body02_s-lineHeight-desktop: 20px;
+  
+  --typography-body03_regular-family-desktop: var(--typography-font-pretendard);
+  --typography-body03_regular-weight-desktop: var(--typography-weight-regular);
+  --typography-body03_regular-size-desktop: 12px;
+  --typography-body03_regular-lineHeight-desktop: 16px;
+  
+  /* 캡션 - 데스크톱 */
+  --typography-caption01-family-desktop: var(--typography-font-pretendard);
+  --typography-caption01-weight-desktop: var(--typography-weight-semibold);
+  --typography-caption01-size-desktop: 12px;
+  --typography-caption01-lineHeight-desktop: 14px;
+  
+  --typography-caption02_m-family-desktop: var(--typography-font-pretendard);
+  --typography-caption02_m-weight-desktop: var(--typography-weight-semibold);
+  --typography-caption02_m-size-desktop: 10px;
+  --typography-caption02_m-lineHeight-desktop: 12px;
+  
+  --typography-caption02_s-family-desktop: var(--typography-font-pretendard);
+  --typography-caption02_s-weight-desktop: var(--typography-weight-medium);
+  --typography-caption02_s-size-desktop: 10px;
+  --typography-caption02_s-lineHeight-desktop: 12px;
+  
+  --typography-caption03-family-desktop: var(--typography-font-pretendard);
+  --typography-caption03-weight-desktop: var(--typography-weight-semibold);
+  --typography-caption03-size-desktop: 8px;
+  --typography-caption03-lineHeight-desktop: 10px;
+  
+  /* 영문 타이포그래피 - 데스크톱 */
+  --typography-en_headline01-family-desktop: var(--typography-font-suit);
+  --typography-en_headline01-weight-desktop: var(--typography-weight-semibold);
+  --typography-en_headline01-size-desktop: 48px;
+  --typography-en_headline01-lineHeight-desktop: 60px;
+  
+  --typography-en_headline02-family-desktop: var(--typography-font-suit);
+  --typography-en_headline02-weight-desktop: var(--typography-weight-semibold);
+  --typography-en_headline02-size-desktop: 36px;
+  --typography-en_headline02-lineHeight-desktop: 48px;
+  
+  --typography-en_body01-family-desktop: var(--typography-font-suit);
+  --typography-en_body01-weight-desktop: var(--typography-weight-medium);
+  --typography-en_body01-size-desktop: 16px;
+  --typography-en_body01-lineHeight-desktop: 24px;
+  
+  --typography-en_body02-family-desktop: var(--typography-font-suit);
+  --typography-en_body02-weight-desktop: var(--typography-weight-medium);
+  --typography-en_body02-size-desktop: 14px;
+  --typography-en_body02-lineHeight-desktop: 22px;
+  
+  /* 웹 헤드라인 - 모바일 */
+  --typography-web-headline01-family-mobile: var(--typography-font-pretendard);
+  --typography-web-headline01-weight-mobile: var(--typography-weight-semibold);
+  --typography-web-headline01-size-mobile: 36px;
+  --typography-web-headline01-lineHeight-mobile: 48px;
+  
+  --typography-web-headline02-family-mobile: var(--typography-font-pretendard);
+  --typography-web-headline02-weight-mobile: var(--typography-weight-semibold);
+  --typography-web-headline02-size-mobile: 28px;
+  --typography-web-headline02-lineHeight-mobile: 36px;
+  
+  --typography-web-headline03-family-mobile: var(--typography-font-pretendard);
+  --typography-web-headline03-weight-mobile: var(--typography-weight-semibold);
+  --typography-web-headline03-size-mobile: 22px;
+  --typography-web-headline03-lineHeight-mobile: 28px;
+  
+  /* 헤드라인 - 모바일 */
+  --typography-headline01-family-mobile: var(--typography-font-pretendard);
+  --typography-headline01-weight-mobile: var(--typography-weight-bold);
+  --typography-headline01-size-mobile: 20px;
+  --typography-headline01-lineHeight-mobile: 28px;
+  
+  --typography-headline02-family-mobile: var(--typography-font-pretendard);
+  --typography-headline02-weight-mobile: var(--typography-weight-extrabold);
+  --typography-headline02-size-mobile: 18px;
+  --typography-headline02-lineHeight-mobile: 26px;
+  
+  --typography-headline03-family-mobile: var(--typography-font-pretendard);
+  --typography-headline03-weight-mobile: var(--typography-weight-bold);
+  --typography-headline03-size-mobile: 16px;
+  --typography-headline03-lineHeight-mobile: 24px;
+  
+  /* 타이틀 - 모바일 */
+  --typography-title01-family-mobile: var(--typography-font-pretendard);
+  --typography-title01-weight-mobile: var(--typography-weight-bold);
+  --typography-title01-size-mobile: 16px;
+  --typography-title01-lineHeight-mobile: 22px;
+  
+  --typography-title02-family-mobile: var(--typography-font-pretendard);
+  --typography-title02-weight-mobile: var(--typography-weight-bold);
+  --typography-title02-size-mobile: 14px;
+  --typography-title02-lineHeight-mobile: 20px;
+  
+  --typography-title03-family-mobile: var(--typography-font-pretendard);
+  --typography-title03-weight-mobile: var(--typography-weight-bold);
+  --typography-title03-size-mobile: 12px;
+  --typography-title03-lineHeight-mobile: 18px;
+  
+  --typography-subtitle01-family-mobile: var(--typography-font-pretendard);
+  --typography-subtitle01-weight-mobile: var(--typography-weight-semibold);
+  --typography-subtitle01-size-mobile: 12px;
+  --typography-subtitle01-lineHeight-mobile: 18px;
+  
+  --typography-subtitle02-family-mobile: var(--typography-font-pretendard);
+  --typography-subtitle02-weight-mobile: var(--typography-weight-semibold);
+  --typography-subtitle02-size-mobile: 10px;
+  --typography-subtitle02-lineHeight-mobile: 16px;
+  
+  /* 본문 - 모바일 */
+  --typography-body01-family-mobile: var(--typography-font-pretendard);
+  --typography-body01-weight-mobile: var(--typography-weight-medium);
+  --typography-body01-size-mobile: 14px;
+  --typography-body01-lineHeight-mobile: 22px;
+  
+  --typography-body02_m-family-mobile: var(--typography-font-pretendard);
+  --typography-body02_m-weight-mobile: var(--typography-weight-medium);
+  --typography-body02_m-size-mobile: 12px;
+  --typography-body02_m-lineHeight-mobile: 18px;
+  
+  --typography-body03-family-mobile: var(--typography-font-pretendard);
+  --typography-body03-weight-mobile: var(--typography-weight-medium);
+  --typography-body03-size-mobile: 10px;
+  --typography-body03-lineHeight-mobile: 16px;
+  
+  --typography-body01_regular-family-mobile: var(--typography-font-pretendard);
+  --typography-body01_regular-weight-mobile: var(--typography-weight-regular);
+  --typography-body01_regular-size-mobile: 14px;
+  --typography-body01_regular-lineHeight-mobile: 20px;
+  
+  --typography-body02_s-family-mobile: var(--typography-font-pretendard);
+  --typography-body02_s-weight-mobile: var(--typography-weight-regular);
+  --typography-body02_s-size-mobile: 12px;
+  --typography-body02_s-lineHeight-mobile: 18px;
+  
+  --typography-body03_regular-family-mobile: var(--typography-font-pretendard);
+  --typography-body03_regular-weight-mobile: var(--typography-weight-regular);
+  --typography-body03_regular-size-mobile: 10px;
+  --typography-body03_regular-lineHeight-mobile: 14px;
+  
+  /* 캡션 - 모바일 */
+  --typography-caption01-family-mobile: var(--typography-font-pretendard);
+  --typography-caption01-weight-mobile: var(--typography-weight-semibold);
+  --typography-caption01-size-mobile: 10px;
+  --typography-caption01-lineHeight-mobile: 12px;
+  
+  --typography-caption02_m-family-mobile: var(--typography-font-pretendard);
+  --typography-caption02_m-weight-mobile: var(--typography-weight-semibold);
+  --typography-caption02_m-size-mobile: 8px;
+  --typography-caption02_m-lineHeight-mobile: 10px;
+  
+  --typography-caption02_s-family-mobile: var(--typography-font-pretendard);
+  --typography-caption02_s-weight-mobile: var(--typography-weight-medium);
+  --typography-caption02_s-size-mobile: 8px;
+  --typography-caption02_s-lineHeight-mobile: 10px;
+  
+  --typography-caption03-family-mobile: var(--typography-font-pretendard);
+  --typography-caption03-weight-mobile: var(--typography-weight-semibold);
+  --typography-caption03-size-mobile: 6px;
+  --typography-caption03-lineHeight-mobile: 8px;
+  
+  /* 영문 타이포그래피 - 모바일 */
+  --typography-en_headline01-family-mobile: var(--typography-font-suit);
+  --typography-en_headline01-weight-mobile: var(--typography-weight-semibold);
+  --typography-en_headline01-size-mobile: 36px;
+  --typography-en_headline01-lineHeight-mobile: 48px;
+  
+  --typography-en_headline02-family-mobile: var(--typography-font-suit);
+  --typography-en_headline02-weight-mobile: var(--typography-weight-semibold);
+  --typography-en_headline02-size-mobile: 28px;
+  --typography-en_headline02-lineHeight-mobile: 36px;
+  
+  --typography-en_body01-family-mobile: var(--typography-font-suit);
+  --typography-en_body01-weight-mobile: var(--typography-weight-medium);
+  --typography-en_body01-size-mobile: 14px;
+  --typography-en_body01-lineHeight-mobile: 22px;
+  
+  --typography-en_body02-family-mobile: var(--typography-font-suit);
+  --typography-en_body02-weight-mobile: var(--typography-weight-medium);
+  --typography-en_body02-size-mobile: 12px;
+  --typography-en_body02-lineHeight-mobile: 18px;
 
   /* 시스템 컬러 */
   --color-primary: #6DA5FA;
@@ -197,7 +471,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--typography-font-pretendard);
 }
 
 @layer utilities {
@@ -225,4 +499,369 @@ body {
   
   .gradient-primary { background: var(--gradient-primary); }
   .gradient-skeleton { background: var(--gradient-skeleton); }
+  
+  /* 타이포그래피 유틸리티 클래스 - 웹 헤드라인 */
+  .web-headline01 {
+    font-family: var(--typography-web-headline01-family-desktop);
+    font-weight: var(--typography-web-headline01-weight-desktop);
+    font-size: var(--typography-web-headline01-size-desktop);
+    line-height: var(--typography-web-headline01-lineHeight-desktop);
+  }
+  
+  .web-headline02 {
+    font-family: var(--typography-web-headline02-family-desktop);
+    font-weight: var(--typography-web-headline02-weight-desktop);
+    font-size: var(--typography-web-headline02-size-desktop);
+    line-height: var(--typography-web-headline02-lineHeight-desktop);
+  }
+  
+  .web-headline03 {
+    font-family: var(--typography-web-headline03-family-desktop);
+    font-weight: var(--typography-web-headline03-weight-desktop);
+    font-size: var(--typography-web-headline03-size-desktop);
+    line-height: var(--typography-web-headline03-lineHeight-desktop);
+  }
+  
+  /* 타이포그래피 유틸리티 클래스 - 헤드라인 */
+  .headline01 {
+    font-family: var(--typography-headline01-family-desktop);
+    font-weight: var(--typography-headline01-weight-desktop);
+    font-size: var(--typography-headline01-size-desktop);
+    line-height: var(--typography-headline01-lineHeight-desktop);
+  }
+  
+  .headline02 {
+    font-family: var(--typography-headline02-family-desktop);
+    font-weight: var(--typography-headline02-weight-desktop);
+    font-size: var(--typography-headline02-size-desktop);
+    line-height: var(--typography-headline02-lineHeight-desktop);
+  }
+  
+  .headline03 {
+    font-family: var(--typography-headline03-family-desktop);
+    font-weight: var(--typography-headline03-weight-desktop);
+    font-size: var(--typography-headline03-size-desktop);
+    line-height: var(--typography-headline03-lineHeight-desktop);
+  }
+  
+  /* 타이포그래피 유틸리티 클래스 - 타이틀 */
+  .title01 {
+    font-family: var(--typography-title01-family-desktop);
+    font-weight: var(--typography-title01-weight-desktop);
+    font-size: var(--typography-title01-size-desktop);
+    line-height: var(--typography-title01-lineHeight-desktop);
+  }
+  
+  .title02 {
+    font-family: var(--typography-title02-family-desktop);
+    font-weight: var(--typography-title02-weight-desktop);
+    font-size: var(--typography-title02-size-desktop);
+    line-height: var(--typography-title02-lineHeight-desktop);
+  }
+  
+  .title03 {
+    font-family: var(--typography-title03-family-desktop);
+    font-weight: var(--typography-title03-weight-desktop);
+    font-size: var(--typography-title03-size-desktop);
+    line-height: var(--typography-title03-lineHeight-desktop);
+  }
+  
+  .subtitle01 {
+    font-family: var(--typography-subtitle01-family-desktop);
+    font-weight: var(--typography-subtitle01-weight-desktop);
+    font-size: var(--typography-subtitle01-size-desktop);
+    line-height: var(--typography-subtitle01-lineHeight-desktop);
+  }
+  
+  .subtitle02 {
+    font-family: var(--typography-subtitle02-family-desktop);
+    font-weight: var(--typography-subtitle02-weight-desktop);
+    font-size: var(--typography-subtitle02-size-desktop);
+    line-height: var(--typography-subtitle02-lineHeight-desktop);
+  }
+  
+  /* 타이포그래피 유틸리티 클래스 - 본문 */
+  .body01 {
+    font-family: var(--typography-body01-family-desktop);
+    font-weight: var(--typography-body01-weight-desktop);
+    font-size: var(--typography-body01-size-desktop);
+    line-height: var(--typography-body01-lineHeight-desktop);
+  }
+  
+  .body02-m {
+    font-family: var(--typography-body02_m-family-desktop);
+    font-weight: var(--typography-body02_m-weight-desktop);
+    font-size: var(--typography-body02_m-size-desktop);
+    line-height: var(--typography-body02_m-lineHeight-desktop);
+  }
+  
+  .body03 {
+    font-family: var(--typography-body03-family-desktop);
+    font-weight: var(--typography-body03-weight-desktop);
+    font-size: var(--typography-body03-size-desktop);
+    line-height: var(--typography-body03-lineHeight-desktop);
+  }
+  
+  .body01-regular {
+    font-family: var(--typography-body01_regular-family-desktop);
+    font-weight: var(--typography-body01_regular-weight-desktop);
+    font-size: var(--typography-body01_regular-size-desktop);
+    line-height: var(--typography-body01_regular-lineHeight-desktop);
+  }
+  
+  .body02-s {
+    font-family: var(--typography-body02_s-family-desktop);
+    font-weight: var(--typography-body02_s-weight-desktop);
+    font-size: var(--typography-body02_s-size-desktop);
+    line-height: var(--typography-body02_s-lineHeight-desktop);
+  }
+  
+  .body03-regular {
+    font-family: var(--typography-body03_regular-family-desktop);
+    font-weight: var(--typography-body03_regular-weight-desktop);
+    font-size: var(--typography-body03_regular-size-desktop);
+    line-height: var(--typography-body03_regular-lineHeight-desktop);
+  }
+  
+  /* 타이포그래피 유틸리티 클래스 - 캡션 */
+  .caption01 {
+    font-family: var(--typography-caption01-family-desktop);
+    font-weight: var(--typography-caption01-weight-desktop);
+    font-size: var(--typography-caption01-size-desktop);
+    line-height: var(--typography-caption01-lineHeight-desktop);
+  }
+  
+  .caption02-m {
+    font-family: var(--typography-caption02_m-family-desktop);
+    font-weight: var(--typography-caption02_m-weight-desktop);
+    font-size: var(--typography-caption02_m-size-desktop);
+    line-height: var(--typography-caption02_m-lineHeight-desktop);
+  }
+  
+  .caption02-s {
+    font-family: var(--typography-caption02_s-family-desktop);
+    font-weight: var(--typography-caption02_s-weight-desktop);
+    font-size: var(--typography-caption02_s-size-desktop);
+    line-height: var(--typography-caption02_s-lineHeight-desktop);
+  }
+  
+  .caption03 {
+    font-family: var(--typography-caption03-family-desktop);
+    font-weight: var(--typography-caption03-weight-desktop);
+    font-size: var(--typography-caption03-size-desktop);
+    line-height: var(--typography-caption03-lineHeight-desktop);
+  }
+  
+  /* 타이포그래피 유틸리티 클래스 - 영문 */
+  .en-headline01 {
+    font-family: var(--typography-en_headline01-family-desktop);
+    font-weight: var(--typography-en_headline01-weight-desktop);
+    font-size: var(--typography-en_headline01-size-desktop);
+    line-height: var(--typography-en_headline01-lineHeight-desktop);
+  }
+  
+  .en-headline02 {
+    font-family: var(--typography-en_headline02-family-desktop);
+    font-weight: var(--typography-en_headline02-weight-desktop);
+    font-size: var(--typography-en_headline02-size-desktop);
+    line-height: var(--typography-en_headline02-lineHeight-desktop);
+  }
+  
+  .en-body01 {
+    font-family: var(--typography-en_body01-family-desktop);
+    font-weight: var(--typography-en_body01-weight-desktop);
+    font-size: var(--typography-en_body01-size-desktop);
+    line-height: var(--typography-en_body01-lineHeight-desktop);
+  }
+  
+  .en-body02 {
+    font-family: var(--typography-en_body02-family-desktop);
+    font-weight: var(--typography-en_body02-weight-desktop);
+    font-size: var(--typography-en_body02-size-desktop);
+    line-height: var(--typography-en_body02-lineHeight-desktop);
+  }
+  
+  /* 모바일 타이포그래피 적용 */
+  @media (max-width: 768px) {
+    /* 웹 헤드라인 - 모바일 */
+    .web-headline01 {
+      font-family: var(--typography-web-headline01-family-mobile);
+      font-weight: var(--typography-web-headline01-weight-mobile);
+      font-size: var(--typography-web-headline01-size-mobile);
+      line-height: var(--typography-web-headline01-lineHeight-mobile);
+    }
+    
+    .web-headline02 {
+      font-family: var(--typography-web-headline02-family-mobile);
+      font-weight: var(--typography-web-headline02-weight-mobile);
+      font-size: var(--typography-web-headline02-size-mobile);
+      line-height: var(--typography-web-headline02-lineHeight-mobile);
+    }
+    
+    .web-headline03 {
+      font-family: var(--typography-web-headline03-family-mobile);
+      font-weight: var(--typography-web-headline03-weight-mobile);
+      font-size: var(--typography-web-headline03-size-mobile);
+      line-height: var(--typography-web-headline03-lineHeight-mobile);
+    }
+    
+    /* 헤드라인 - 모바일 */
+    .headline01 {
+      font-family: var(--typography-headline01-family-mobile);
+      font-weight: var(--typography-headline01-weight-mobile);
+      font-size: var(--typography-headline01-size-mobile);
+      line-height: var(--typography-headline01-lineHeight-mobile);
+    }
+    
+    .headline02 {
+      font-family: var(--typography-headline02-family-mobile);
+      font-weight: var(--typography-headline02-weight-mobile);
+      font-size: var(--typography-headline02-size-mobile);
+      line-height: var(--typography-headline02-lineHeight-mobile);
+    }
+    
+    .headline03 {
+      font-family: var(--typography-headline03-family-mobile);
+      font-weight: var(--typography-headline03-weight-mobile);
+      font-size: var(--typography-headline03-size-mobile);
+      line-height: var(--typography-headline03-lineHeight-mobile);
+    }
+    
+    /* 타이틀 - 모바일 */
+    .title01 {
+      font-family: var(--typography-title01-family-mobile);
+      font-weight: var(--typography-title01-weight-mobile);
+      font-size: var(--typography-title01-size-mobile);
+      line-height: var(--typography-title01-lineHeight-mobile);
+    }
+    
+    .title02 {
+      font-family: var(--typography-title02-family-mobile);
+      font-weight: var(--typography-title02-weight-mobile);
+      font-size: var(--typography-title02-size-mobile);
+      line-height: var(--typography-title02-lineHeight-mobile);
+    }
+    
+    .title03 {
+      font-family: var(--typography-title03-family-mobile);
+      font-weight: var(--typography-title03-weight-mobile);
+      font-size: var(--typography-title03-size-mobile);
+      line-height: var(--typography-title03-lineHeight-mobile);
+    }
+    
+    .subtitle01 {
+      font-family: var(--typography-subtitle01-family-mobile);
+      font-weight: var(--typography-subtitle01-weight-mobile);
+      font-size: var(--typography-subtitle01-size-mobile);
+      line-height: var(--typography-subtitle01-lineHeight-mobile);
+    }
+    
+    .subtitle02 {
+      font-family: var(--typography-subtitle02-family-mobile);
+      font-weight: var(--typography-subtitle02-weight-mobile);
+      font-size: var(--typography-subtitle02-size-mobile);
+      line-height: var(--typography-subtitle02-lineHeight-mobile);
+    }
+    
+    /* 본문 - 모바일 */
+    .body01 {
+      font-family: var(--typography-body01-family-mobile);
+      font-weight: var(--typography-body01-weight-mobile);
+      font-size: var(--typography-body01-size-mobile);
+      line-height: var(--typography-body01-lineHeight-mobile);
+    }
+    
+    .body02-m {
+      font-family: var(--typography-body02_m-family-mobile);
+      font-weight: var(--typography-body02_m-weight-mobile);
+      font-size: var(--typography-body02_m-size-mobile);
+      line-height: var(--typography-body02_m-lineHeight-mobile);
+    }
+    
+    .body03 {
+      font-family: var(--typography-body03-family-mobile);
+      font-weight: var(--typography-body03-weight-mobile);
+      font-size: var(--typography-body03-size-mobile);
+      line-height: var(--typography-body03-lineHeight-mobile);
+    }
+    
+    .body01-regular {
+      font-family: var(--typography-body01_regular-family-mobile);
+      font-weight: var(--typography-body01_regular-weight-mobile);
+      font-size: var(--typography-body01_regular-size-mobile);
+      line-height: var(--typography-body01_regular-lineHeight-mobile);
+    }
+    
+    .body02-s {
+      font-family: var(--typography-body02_s-family-mobile);
+      font-weight: var(--typography-body02_s-weight-mobile);
+      font-size: var(--typography-body02_s-size-mobile);
+      line-height: var(--typography-body02_s-lineHeight-mobile);
+    }
+    
+    .body03-regular {
+      font-family: var(--typography-body03_regular-family-mobile);
+      font-weight: var(--typography-body03_regular-weight-mobile);
+      font-size: var(--typography-body03_regular-size-mobile);
+      line-height: var(--typography-body03_regular-lineHeight-mobile);
+    }
+    
+    /* 캡션 - 모바일 */
+    .caption01 {
+      font-family: var(--typography-caption01-family-mobile);
+      font-weight: var(--typography-caption01-weight-mobile);
+      font-size: var(--typography-caption01-size-mobile);
+      line-height: var(--typography-caption01-lineHeight-mobile);
+    }
+    
+    .caption02-m {
+      font-family: var(--typography-caption02_m-family-mobile);
+      font-weight: var(--typography-caption02_m-weight-mobile);
+      font-size: var(--typography-caption02_m-size-mobile);
+      line-height: var(--typography-caption02_m-lineHeight-mobile);
+    }
+    
+    .caption02-s {
+      font-family: var(--typography-caption02_s-family-mobile);
+      font-weight: var(--typography-caption02_s-weight-mobile);
+      font-size: var(--typography-caption02_s-size-mobile);
+      line-height: var(--typography-caption02_s-lineHeight-mobile);
+    }
+    
+    .caption03 {
+      font-family: var(--typography-caption03-family-mobile);
+      font-weight: var(--typography-caption03-weight-mobile);
+      font-size: var(--typography-caption03-size-mobile);
+      line-height: var(--typography-caption03-lineHeight-mobile);
+    }
+    
+    /* 영문 타이포그래피 - 모바일 */
+    .en-headline01 {
+      font-family: var(--typography-en_headline01-family-mobile);
+      font-weight: var(--typography-en_headline01-weight-mobile);
+      font-size: var(--typography-en_headline01-size-mobile);
+      line-height: var(--typography-en_headline01-lineHeight-mobile);
+    }
+    
+    .en-headline02 {
+      font-family: var(--typography-en_headline02-family-mobile);
+      font-weight: var(--typography-en_headline02-weight-mobile);
+      font-size: var(--typography-en_headline02-size-mobile);
+      line-height: var(--typography-en_headline02-lineHeight-mobile);
+    }
+    
+    .en-body01 {
+      font-family: var(--typography-en_body01-family-mobile);
+      font-weight: var(--typography-en_body01-weight-mobile);
+      font-size: var(--typography-en_body01-size-mobile);
+      line-height: var(--typography-en_body01-lineHeight-mobile);
+    }
+    
+    .en-body02 {
+      font-family: var(--typography-en_body02-family-mobile);
+      font-weight: var(--typography-en_body02-weight-mobile);
+      font-size: var(--typography-en_body02-size-mobile);
+      line-height: var(--typography-en_body02-lineHeight-mobile);
+    }
+  }
 }
