@@ -2,16 +2,196 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Color Foundation - 피그마 파운데이션 기반 CSS 변수 */
 :root {
+  /* 기본 배경/전경 (기존 호환성 유지) */
   --background: #ffffff;
   --foreground: #171717;
+
+  /* 시스템 컬러 */
+  --color-primary: #6DA5FA;
+  --color-secondary: #3A5CF3;
+  --color-success: #12B75F;
+  --color-error: #F03851;
+  --color-warning: #FFB300;
+
+  /* 텍스트 컬러 */
+  --color-text-primary: #000000;
+  --color-text-secondary: #777777;
+  --color-text-tertiary: #ABABAB;
+  --color-text-inverse: #FFFFFF;
+  --color-text-disabled: #C7C7C7;
+
+  /* 배경 컬러 */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F2F2F2;
+  --color-bg-tertiary: #E4E4E4;
+  --color-bg-inverse: #000000;
+  --color-bg-overlay: rgba(0, 0, 0, 0.5);
+
+  /* 보더 컬러 */
+  --color-border-primary: #D4D3D3;
+  --color-border-secondary: #E4E4E4;
+  --color-border-focus: #6DA5FA;
+  --color-border-error: #F03851;
+  --color-border-success: #12B75F;
+
+  /* 상태별 컬러 */
+  --color-state-hover: #F2F2F2;
+  --color-state-active: #E4E4E4;
+  --color-state-disabled: #D4D3D3;
+  --color-state-selected: #F0F7FF;
+
+  /* 그라데이션 */
+  --gradient-primary: linear-gradient(135deg, #6DA5FA 0%, #92EAF5 100%);
+  --gradient-skeleton: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.6) 48.5%, transparent 100%);
+
+  /* Blue 계열 */
+  --color-blue-5: #F0F7FF;
+  --color-blue-10: #DBEEFF;
+  --color-blue-20: #BDDBFF;
+  --color-blue-30: #93BEFF;
+  --color-blue-40: #6DA5FA;
+  --color-blue-50: #497CFF;
+  --color-blue-60: #3A5CF3;
+  --color-blue-70: #274AE1;
+  --color-blue-80: #1530A6;
+  --color-blue-90: #0B2184;
+
+  /* Gray 계열 */
+  --color-gray-white: #FFFFFF;
+  --color-gray-5: #F2F2F2;
+  --color-gray-10: #E4E4E4;
+  --color-gray-20: #D4D3D3;
+  --color-gray-30: #C7C7C7;
+  --color-gray-40: #ABABAB;
+  --color-gray-50: #919191;
+  --color-gray-60: #777777;
+  --color-gray-70: #5F5F5F;
+  --color-gray-80: #333333;
+  --color-gray-90: #1C1C1C;
+  --color-gray-black: #000000;
+
+  /* Red 계열 */
+  --color-red-5: #FDD7DC;
+  --color-red-10: #F797A4;
+  --color-red-20: #F4677A;
+  --color-red-30: #F03851;
+  --color-red-40: #E4112E;
+  --color-red-50: #B40E24;
+  --color-red-60: #850A1B;
+
+  /* Green 계열 */
+  --color-green-5: #D3F3E0;
+  --color-green-10: #92E6B9;
+  --color-green-20: #15D66F;
+  --color-green-30: #12B75F;
+  --color-green-40: #109C51;
+  --color-green-50: #0E723C;
+  --color-green-60: #084424;
+
+  /* Yellow 계열 */
+  --color-yellow-5: #FFE499;
+  --color-yellow-10: #FFD666;
+  --color-yellow-20: #FFC933;
+  --color-yellow-30: #FFB300;
+  --color-yellow-40: #EBA500;
+  --color-yellow-50: #D69600;
+  --color-yellow-60: #B27D00;
+
+  /* Cool Gray 계열 */
+  --color-cool-gray-1: #F8F8FA;
+  --color-cool-gray-5: #F6F6F9;
+  --color-cool-gray-10: #EDEEF2;
+  --color-cool-gray-20: #DDDFE5;
+  --color-cool-gray-30: #D2D4DD;
+  --color-cool-gray-40: #C7C9D5;
+  --color-cool-gray-50: #BBBECD;
+  --color-cool-gray-60: #B0B3C4;
 }
 
+/* 다크모드 CSS 변수 */
 @media (prefers-color-scheme: dark) {
   :root {
+    /* 기본 배경/전경 (기존 호환성 유지) */
     --background: #0a0a0a;
     --foreground: #ededed;
+
+    /* 시스템 컬러 (다크모드) */
+    --color-primary: #497CFF;
+    --color-secondary: #6DA5FA;
+    --color-success: #15D66F;
+    --color-error: #F4677A;
+    --color-warning: #FFC933;
+
+    /* 텍스트 컬러 (다크모드) */
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #C7C7C7;
+    --color-text-tertiary: #919191;
+    --color-text-inverse: #000000;
+    --color-text-disabled: #777777;
+
+    /* 배경 컬러 (다크모드) */
+    --color-bg-primary: #000000;
+    --color-bg-secondary: #1C1C1C;
+    --color-bg-tertiary: #333333;
+    --color-bg-inverse: #FFFFFF;
+    --color-bg-overlay: rgba(255, 255, 255, 0.1);
+
+    /* 보더 컬러 (다크모드) */
+    --color-border-primary: #5F5F5F;
+    --color-border-secondary: #333333;
+    --color-border-focus: #497CFF;
+    --color-border-error: #F4677A;
+    --color-border-success: #15D66F;
+
+    /* 상태별 컬러 (다크모드) */
+    --color-state-hover: #333333;
+    --color-state-active: #5F5F5F;
+    --color-state-disabled: #333333;
+    --color-state-selected: #0B2184;
   }
+}
+
+/* 다크모드 클래스 기반 (수동 토글용) */
+.dark {
+  /* 기본 배경/전경 */
+  --background: #0a0a0a;
+  --foreground: #ededed;
+
+  /* 시스템 컬러 (다크모드) */
+  --color-primary: #497CFF;
+  --color-secondary: #6DA5FA;
+  --color-success: #15D66F;
+  --color-error: #F4677A;
+  --color-warning: #FFC933;
+
+  /* 텍스트 컬러 (다크모드) */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #C7C7C7;
+  --color-text-tertiary: #919191;
+  --color-text-inverse: #000000;
+  --color-text-disabled: #777777;
+
+  /* 배경 컬러 (다크모드) */
+  --color-bg-primary: #000000;
+  --color-bg-secondary: #1C1C1C;
+  --color-bg-tertiary: #333333;
+  --color-bg-inverse: #FFFFFF;
+  --color-bg-overlay: rgba(255, 255, 255, 0.1);
+
+  /* 보더 컬러 (다크모드) */
+  --color-border-primary: #5F5F5F;
+  --color-border-secondary: #333333;
+  --color-border-focus: #497CFF;
+  --color-border-error: #F4677A;
+  --color-border-success: #15D66F;
+
+  /* 상태별 컬러 (다크모드) */
+  --color-state-hover: #333333;
+  --color-state-active: #5F5F5F;
+  --color-state-disabled: #333333;
+  --color-state-selected: #0B2184;
 }
 
 body {
@@ -24,4 +204,25 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  
+  /* 컬러 토큰 유틸리티 클래스 */
+  .text-primary { color: var(--color-text-primary); }
+  .text-secondary { color: var(--color-text-secondary); }
+  .text-tertiary { color: var(--color-text-tertiary); }
+  .text-inverse { color: var(--color-text-inverse); }
+  .text-disabled { color: var(--color-text-disabled); }
+  
+  .bg-primary { background-color: var(--color-bg-primary); }
+  .bg-secondary { background-color: var(--color-bg-secondary); }
+  .bg-tertiary { background-color: var(--color-bg-tertiary); }
+  .bg-inverse { background-color: var(--color-bg-inverse); }
+  
+  .border-primary { border-color: var(--color-border-primary); }
+  .border-secondary { border-color: var(--color-border-secondary); }
+  .border-focus { border-color: var(--color-border-focus); }
+  .border-error { border-color: var(--color-border-error); }
+  .border-success { border-color: var(--color-border-success); }
+  
+  .gradient-primary { background: var(--gradient-primary); }
+  .gradient-skeleton { background: var(--gradient-skeleton); }
 }
