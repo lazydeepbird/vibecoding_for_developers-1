@@ -2,7 +2,7 @@ import React, { InputHTMLAttributes } from 'react';
 import { useTheme } from 'next-themes';
 import styles from './styles.module.css';
 
-export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+export interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
     /**
      * 인풋 변형 타입
      * @default 'primary'
