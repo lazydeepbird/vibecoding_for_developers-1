@@ -1,217 +1,218 @@
 /* Toggle Base Styles */
 .toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  border: none;
-  border-radius: 100px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  outline: none;
-  background: transparent;
-  padding: 0;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    background: transparent;
+    padding: 0;
 }
 
 .toggle:focus-visible {
-  box-shadow: 0 0 0 2px var(--color-border-focus);
+    box-shadow: 0 0 0 2px var(--color-border-focus);
 }
 
 /* Handle Base Styles */
 .handle {
-  border-radius: 50%;
-  background-color: var(--color-bg-primary);
-  transition: all 0.2s ease-in-out;
-  display: flex;
-  flex-shrink: 0;
+    border-radius: 50%;
+    background-color: var(--color-bg-primary);
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-shrink: 0;
 }
 
 /* Size Variants */
 .toggle--small {
-  width: 44px;
-  height: 24px;
+    width: 44px;
+    height: 24px;
 }
 
 .handle--small {
-  width: 18px;
-  height: 18px;
-  transform: translateX(3px);
+    width: 18px;
+    height: 18px;
+    transform: translateX(3px);
 }
 
 .handle--small.handle--checked {
-  transform: translateX(23px);
+    transform: translateX(23px);
 }
 
 .toggle--medium {
-  width: 58px;
-  height: 32px;
+    width: 58px;
+    height: 32px;
 }
 
 .handle--medium {
-  width: 24px;
-  height: 24px;
-  transform: translateX(4px);
+    width: 24px;
+    height: 24px;
+    transform: translateX(4px);
 }
 
 .handle--medium.handle--checked {
-  transform: translateX(30px);
+    transform: translateX(30px);
 }
 
 .toggle--large {
-  width: 72px;
-  height: 40px;
+    width: 72px;
+    height: 40px;
 }
 
 .handle--large {
-  width: 32px;
-  height: 32px;
-  transform: translateX(4px);
+    width: 32px;
+    height: 32px;
+    transform: translateX(4px);
 }
 
 .handle--large.handle--checked {
-  transform: translateX(36px);
+    transform: translateX(36px);
 }
 
 /* Light Theme Variants */
 .toggle--light.toggle--primary {
-  background-color: var(--color-gray-10);
+    background-color: var(--color-gray-10);
 }
 
 .toggle--light.toggle--primary.toggle--checked {
-  background-color: var(--color-primary);
+    background-color: var(--color-primary);
 }
 
 .toggle--light.toggle--secondary {
-  background-color: var(--color-gray-10);
+    background-color: var(--color-gray-10);
 }
 
 .toggle--light.toggle--secondary.toggle--checked {
-  background-color: var(--color-secondary);
+    background-color: var(--color-secondary);
 }
 
 .toggle--light.toggle--tertiary {
-  background-color: var(--color-gray-10);
+    background-color: var(--color-gray-10);
 }
 
 .toggle--light.toggle--tertiary.toggle--checked {
-  background-color: var(--color-gray-60);
+    background-color: var(--color-gray-60);
 }
 
 /* Dark Theme Variants */
 .toggle--dark.toggle--primary {
-  background-color: var(--color-gray-70);
+    background-color: var(--color-gray-70);
 }
 
 .toggle--dark.toggle--primary.toggle--checked {
-  background-color: var(--color-blue-50);
+    background-color: var(--color-blue-50);
 }
 
 .toggle--dark.toggle--secondary {
-  background-color: var(--color-gray-70);
+    background-color: var(--color-gray-70);
 }
 
 .toggle--dark.toggle--secondary.toggle--checked {
-  background-color: var(--color-blue-40);
+    background-color: var(--color-blue-40);
 }
 
 .toggle--dark.toggle--tertiary {
-  background-color: var(--color-gray-70);
+    background-color: var(--color-gray-70);
 }
 
 .toggle--dark.toggle--tertiary.toggle--checked {
-  background-color: var(--color-gray-40);
+    background-color: var(--color-gray-40);
 }
 
 /* Handle Theme Variants */
 .handle--light {
-  background-color: var(--color-bg-primary);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-bg-primary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .handle--dark {
-  background-color: var(--color-gray-white);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: var(--color-gray-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Disabled States */
 .toggle--disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
+    cursor: not-allowed;
+    opacity: 0.5;
 }
 
 .toggle--disabled.toggle--light {
-  background-color: var(--color-state-disabled);
+    background-color: var(--color-state-disabled);
 }
 
 .toggle--disabled.toggle--dark {
-  background-color: var(--color-gray-80);
+    background-color: var(--color-gray-80);
 }
 
 .handle--disabled {
-  background-color: var(--color-text-disabled);
-  box-shadow: none;
+    background-color: var(--color-text-disabled);
+    box-shadow: none;
 }
 
 /* Hover States */
 .toggle:hover:not(.toggle--disabled) {
-  opacity: 0.9;
+    opacity: 0.9;
 }
 
 .toggle:hover:not(.toggle--disabled) .handle {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .toggle--dark:hover:not(.toggle--disabled) .handle {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* Active States */
 .toggle:active:not(.toggle--disabled) {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 .toggle:active:not(.toggle--disabled) .handle {
-  transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 .toggle:active:not(.toggle--disabled).toggle--small .handle {
-  transform: translateX(3px) scale(0.95);
+    transform: translateX(3px) scale(0.95);
 }
 
 .toggle:active:not(.toggle--disabled).toggle--small .handle.handle--checked {
-  transform: translateX(23px) scale(0.95);
+    transform: translateX(23px) scale(0.95);
 }
 
 .toggle:active:not(.toggle--disabled).toggle--medium .handle {
-  transform: translateX(4px) scale(0.95);
+    transform: translateX(4px) scale(0.95);
 }
 
 .toggle:active:not(.toggle--disabled).toggle--medium .handle.handle--checked {
-  transform: translateX(30px) scale(0.95);
+    transform: translateX(30px) scale(0.95);
 }
 
 .toggle:active:not(.toggle--disabled).toggle--large .handle {
-  transform: translateX(4px) scale(0.95);
+    transform: translateX(4px) scale(0.95);
 }
 
 .toggle:active:not(.toggle--disabled).toggle--large .handle.handle--checked {
-  transform: translateX(36px) scale(0.95);
+    transform: translateX(36px) scale(0.95);
 }
 
 /* High Contrast Mode Support */
 @media (prefers-contrast: high) {
-  .toggle {
-    border: 2px solid var(--color-border-primary);
-  }
-  
-  .handle {
-    border: 2px solid var(--color-border-primary);
-  }
+    .toggle {
+        border: 2px solid var(--color-border-primary);
+    }
+
+    .handle {
+        border: 2px solid var(--color-border-primary);
+    }
 }
 
 /* Reduced Motion Support */
 @media (prefers-reduced-motion: reduce) {
-  .toggle,
-  .handle {
-    transition: none;
-  }
+
+    .toggle,
+    .handle {
+        transition: none;
+    }
 }

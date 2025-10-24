@@ -1,0 +1,195 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-family: var(--typography-title-title02-family-desktop);
+    font-weight: var(--typography-title-title02-weight-desktop);
+    font-size: var(--typography-title-title02-size-desktop);
+    line-height: var(--typography-title-title02-lineHeight-desktop);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border: none;
+    gap: 4px;
+}
+
+/* 사이즈 변형 */
+.small {
+    padding: 6px 12px;
+    height: 32px;
+    font-family: var(--typography-title-title03-family-desktop);
+    font-weight: var(--typography-title-title03-weight-desktop);
+    font-size: var(--typography-title-title03-size-desktop);
+    line-height: var(--typography-title-title03-lineHeight-desktop);
+}
+
+.medium {
+    padding: 8px 16px;
+    height: 40px;
+}
+
+.large {
+    padding: 12px 20px;
+    height: 48px;
+    font-family: var(--typography-title-title01-family-desktop);
+    font-weight: var(--typography-title-title01-weight-desktop);
+    font-size: var(--typography-title-title01-size-desktop);
+    line-height: var(--typography-title-title01-lineHeight-desktop);
+}
+
+/* 피그마 디자인 기반 스타일 */
+/* Primary - 피그마 디자인에서는 검은색 배경에 흰색 텍스트 */
+.light.primary {
+    background-color: var(--color-bg-inverse);
+    color: var(--color-text-inverse);
+}
+
+.light.primary:hover {
+    background-color: var(--color-gray-80);
+}
+
+.light.primary:active {
+    background-color: var(--color-gray-70);
+}
+
+.light.primary:disabled {
+    background-color: var(--color-state-disabled);
+    color: var(--color-text-disabled);
+    cursor: not-allowed;
+}
+
+/* Secondary */
+.light.secondary {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border-primary);
+}
+
+.light.secondary:hover {
+    background-color: var(--color-state-hover);
+}
+
+.light.secondary:active {
+    background-color: var(--color-state-active);
+}
+
+.light.secondary:disabled {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-disabled);
+    border: 1px solid var(--color-state-disabled);
+    cursor: not-allowed;
+}
+
+/* Tertiary */
+.light.tertiary {
+    background-color: transparent;
+    color: var(--color-text-primary);
+}
+
+.light.tertiary:hover {
+    background-color: var(--color-state-hover);
+}
+
+.light.tertiary:active {
+    background-color: var(--color-state-active);
+}
+
+.light.tertiary:disabled {
+    color: var(--color-text-disabled);
+    cursor: not-allowed;
+}
+
+/* 다크 테마 스타일 */
+/* Primary */
+.dark.primary {
+    background-color: var(--color-bg-inverse);
+    color: var(--color-text-inverse);
+}
+
+.dark.primary:hover {
+    background-color: var(--color-gray-80);
+}
+
+.dark.primary:active {
+    background-color: var(--color-gray-70);
+}
+
+.dark.primary:disabled {
+    background-color: var(--color-state-disabled);
+    color: var(--color-text-disabled);
+    cursor: not-allowed;
+}
+
+/* Secondary */
+.dark.secondary {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border-primary);
+}
+
+.dark.secondary:hover {
+    background-color: var(--color-state-hover);
+}
+
+.dark.secondary:active {
+    background-color: var(--color-state-active);
+}
+
+.dark.secondary:disabled {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-disabled);
+    border: 1px solid var(--color-state-disabled);
+    cursor: not-allowed;
+}
+
+/* Tertiary */
+.dark.tertiary {
+    background-color: transparent;
+    color: var(--color-text-primary);
+}
+
+.dark.tertiary:hover {
+    background-color: var(--color-state-hover);
+}
+
+.dark.tertiary:active {
+    background-color: var(--color-state-active);
+}
+
+.dark.tertiary:disabled {
+    color: var(--color-text-disabled);
+    cursor: not-allowed;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .button {
+        font-family: var(--typography-title-title02-family-mobile);
+        font-weight: var(--typography-title-title02-weight-mobile);
+        font-size: var(--typography-title-title02-size-mobile);
+        line-height: var(--typography-title-title02-lineHeight-mobile);
+    }
+
+    .small {
+        padding: 4px 10px;
+        height: 28px;
+        font-family: var(--typography-title-title03-family-mobile);
+        font-weight: var(--typography-title-title03-weight-mobile);
+        font-size: var(--typography-title-title03-size-mobile);
+        line-height: var(--typography-title-title03-lineHeight-mobile);
+    }
+
+    .medium {
+        padding: 6px 14px;
+        height: 36px;
+    }
+
+    .large {
+        padding: 10px 18px;
+        height: 44px;
+        font-family: var(--typography-title-title01-family-mobile);
+        font-weight: var(--typography-title-title01-weight-mobile);
+        font-size: var(--typography-title-title01-size-mobile);
+        line-height: var(--typography-title-title01-lineHeight-mobile);
+    }
+}

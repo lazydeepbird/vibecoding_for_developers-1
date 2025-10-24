@@ -1,0 +1,198 @@
+/* 페이지네이션 컨테이너 */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: 'Pretendard Variable', sans-serif;
+}
+
+/* 페이지 버튼 컨테이너 */
+.pageButtonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* 기본 페이지 버튼 스타일 */
+.pageButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all 0.2s ease;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-secondary);
+}
+
+/* 활성화된 페이지 버튼 */
+.pageButton.active {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+    font-weight: 500;
+}
+
+/* 페이지 버튼 호버 상태 */
+.pageButton:hover:not(.active) {
+    background-color: var(--color-state-hover);
+}
+
+/* 네비게이션 버튼 (이전/다음) */
+.navButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+    transition: all 0.2s ease;
+}
+
+/* 네비게이션 버튼 비활성화 상태 */
+.navButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* 네비게이션 버튼 호버 상태 */
+.navButton:not(:disabled):hover {
+    color: var(--color-text-primary);
+}
+
+/* 화살표 아이콘 */
+.arrowIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 사이즈 변형 - 작은 크기 */
+.small .pageButton {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.small .navButton {
+    width: 20px;
+    height: 20px;
+}
+
+.small .arrowIcon svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* 사이즈 변형 - 중간 크기 (기본) */
+.medium .pageButton {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.medium .navButton {
+    width: 24px;
+    height: 24px;
+}
+
+.medium .arrowIcon svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* 사이즈 변형 - 큰 크기 */
+.large .pageButton {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.large .navButton {
+    width: 32px;
+    height: 32px;
+}
+
+.large .arrowIcon svg {
+    width: 28px;
+    height: 28px;
+}
+
+/* 변형 - primary */
+.primary.light .pageButton.active {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+}
+
+.primary.dark .pageButton.active {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+}
+
+/* 변형 - secondary */
+.secondary.light .pageButton.active {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverse);
+}
+
+.secondary.dark .pageButton.active {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverse);
+}
+
+/* 변형 - tertiary */
+.tertiary.light .pageButton.active {
+    background-color: var(--color-bg-tertiary);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border-primary);
+}
+
+.tertiary.dark .pageButton.active {
+    background-color: var(--color-bg-tertiary);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border-primary);
+}
+
+/* 라이트 테마 */
+.light .pageButton {
+    color: #777777;
+    background-color: #ffffff;
+}
+
+.light .pageButton.active {
+    background-color: #f2f2f2;
+    color: #000000;
+}
+
+.light .navButton {
+    color: #777777;
+}
+
+.light .navButton:not(:disabled):hover {
+    color: #000000;
+}
+
+/* 다크 테마 */
+.dark .pageButton {
+    color: #c7c7c7;
+    background-color: #1c1c1c;
+}
+
+.dark .pageButton.active {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark .navButton {
+    color: #c7c7c7;
+}
+
+.dark .navButton:not(:disabled):hover {
+    color: #ffffff;
+}
