@@ -1,0 +1,321 @@
+/* 다이어리 상세 페이지 와이어프레임 스타일 */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1168px;
+    margin: 0 auto;
+    background-color: var(--color-bg-primary);
+}
+
+/* 간격 요소들 */
+.gapLarge {
+    width: 1168px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.gapMedium {
+    width: 1168px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.gapSmall {
+    width: 1168px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* 컨텐츠 영역들 */
+.detailTitle {
+    width: 1168px;
+    height: 84px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* 타이틀 섹션 */
+.titleSection {
+    width: 100%;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.titleText {
+    font-family: var(--typography-font-pretendard);
+    font-weight: var(--typography-weight-bold);
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: -0.22px;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+/* 감정&날짜 섹션 */
+.emotionDateSection {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emotionArea {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 32px;
+}
+
+.emotionIcon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emotionText {
+    font-family: var(--typography-font-pretendard);
+    font-weight: var(--typography-weight-semibold);
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: var(--color-red-30);
+}
+
+.dateArea {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 20px;
+}
+
+.dateText {
+    font-family: var(--typography-font-pretendard);
+    font-weight: var(--typography-weight-regular);
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.14px;
+    color: var(--color-gray-50);
+}
+
+.dateLabel {
+    font-family: var(--typography-font-pretendard);
+    font-weight: var(--typography-weight-regular);
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.14px;
+    color: var(--color-gray-50);
+}
+
+/* 내용 영역 */
+.detailContent {
+    width: 1168px;
+    height: 169px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contentArea {
+    width: 100%;
+    height: 133px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.contentLabel {
+    font-family: var(--typography-font-pretendard);
+    font-weight: var(--typography-weight-semibold);
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.16px;
+    color: var(--color-text-primary);
+}
+
+.contentText {
+    font-family: var(--typography-font-pretendard);
+    font-weight: var(--typography-weight-medium);
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.16px;
+    color: var(--color-gray-80);
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.copyArea {
+    width: 100%;
+    height: 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.copyButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    height: 24px;
+}
+
+.copyText {
+    font-family: var(--typography-font-pretendard);
+    font-weight: var(--typography-weight-regular);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+    color: var(--color-gray-90);
+}
+
+/* 푸터 영역 */
+.detailFooter {
+    width: 1168px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+}
+
+.actionButton {
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border-primary);
+    background-color: var(--color-bg-primary);
+    font-family: var(--typography-font-pretendard);
+    font-weight: var(--typography-weight-medium);
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.18px;
+    color: var(--color-gray-90);
+}
+
+/* 회고 입력 영역 스타일 */
+.retrospectInput {
+    width: 1168px;
+    height: 85px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.retrospectLabel {
+    font-family: var(--typography-font-pretendard);
+    font-weight: var(--typography-weight-semibold);
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.18px;
+    color: var(--color-text-primary);
+    height: 24px;
+}
+
+.retrospectInputFrame {
+    display: flex;
+    gap: 16px;
+    height: 48px;
+    align-items: center;
+}
+
+.retrospectInputField {
+    flex: 1;
+    height: 48px;
+}
+
+.retrospectInputElement {
+    width: 100%;
+    height: 48px !important;
+    border-radius: 8px !important;
+    border: 1px solid var(--color-gray-30) !important;
+    background-color: var(--color-bg-primary) !important;
+    padding: 0 16px !important;
+    font-family: var(--typography-font-pretendard) !important;
+    font-weight: var(--typography-weight-medium) !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    letter-spacing: -0.16px !important;
+    color: var(--color-text-primary) !important;
+}
+
+.retrospectInputElement::placeholder {
+    color: var(--color-gray-50) !important;
+}
+
+.retrospectSubmitButton {
+    height: 48px !important;
+    border-radius: 8px !important;
+    background-color: var(--color-text-primary) !important;
+    border: none !important;
+    font-family: var(--typography-font-pretendard) !important;
+    font-weight: var(--typography-weight-semibold) !important;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    letter-spacing: -0.18px !important;
+    color: var(--color-bg-primary) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* 회고 목록 영역 스타일 */
+.retrospectList {
+    width: 1168px;
+    min-height: 72px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background-color: var(--color-bg-primary);
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 12px;
+}
+
+.retrospectItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 24px;
+}
+
+.retrospectContent {
+    font-family: var(--typography-font-pretendard);
+    font-weight: var(--typography-weight-medium);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+    color: var(--color-text-primary);
+    flex: 1;
+}
+
+.retrospectDate {
+    font-family: var(--typography-font-pretendard);
+    font-weight: var(--typography-weight-regular);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+    color: var(--color-gray-60);
+}
+
+.retrospectDivider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-gray-20);
+}

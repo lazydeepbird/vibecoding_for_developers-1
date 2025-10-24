@@ -85,3 +85,4 @@ const Searchbar = forwardRef<HTMLInputElement, SearchbarProps>(({
 Searchbar.displayName = 'Searchbar';
 
 export default Searchbar;
+

@@ -1,0 +1,148 @@
+/* Wrapper 영역 - 피그마 노드 3:837 */
+.wrapper {
+    width: 640px;
+    height: 560px;
+    background-color: var(--color-bg-primary);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 40px;
+}
+
+/* Header 영역 */
+.header {
+    width: 100%;
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.headerTitle {
+    font-family: var(--typography-font-pretendard);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.24px;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+/* Emotion Box 영역 - 피그마 노드 3:840 */
+.emotionBox {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.emotionQuestion {
+    font-family: var(--typography-font-pretendard);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.emotionRadioGroup {
+    display: flex;
+    gap: 20px;
+    height: 24px;
+    align-items: center;
+}
+
+.emotionRadioItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.emotionRadioInput {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+}
+
+.emotionRadioText {
+    font-family: var(--typography-font-pretendard);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.18px;
+    color: #333333;
+}
+
+/* Input Title 영역 - 피그마 노드 3:849 */
+.inputTitle {
+    width: 100%;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+/* Input Content 영역 - 피그마 노드 3:853 */
+.inputContent {
+    width: 100%;
+    height: 156px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contentLabel {
+    font-family: var(--typography-font-pretendard);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.14px;
+    color: #333333;
+    margin: 0;
+}
+
+.contentTextarea {
+    width: 100%;
+    height: 128px;
+    border-radius: 8px;
+    border: 2px solid #d4d3d3;
+    background-color: var(--color-bg-primary);
+    padding: 16px;
+    font-family: var(--typography-font-pretendard);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+    color: var(--color-text-primary);
+    resize: none;
+}
+
+.contentTextarea:focus {
+    outline: none;
+    border-color: var(--color-border-focus);
+}
+
+.contentTextarea::placeholder {
+    color: var(--color-text-tertiary);
+}
+
+/* Footer 영역 - 피그마 노드 3:857 */
+.footer {
+    width: 224px;
+    height: 48px;
+    display: flex;
+    gap: 16px;
+    align-self: flex-end;
+}
+
+.cancelButton {
+    width: 104px;
+}
+
+.submitButton {
+    width: 104px;
+}

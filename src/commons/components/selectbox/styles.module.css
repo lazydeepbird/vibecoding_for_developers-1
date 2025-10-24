@@ -1,0 +1,361 @@
+/* Container */
+.selectContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+/* Label */
+.label {
+    font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--text-primary, #1c1c1c);
+    margin-bottom: 4px;
+}
+
+/* Select Wrapper */
+.selectWrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Base Select Styles */
+.select {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--bg-primary, #ffffff);
+    border: 1px solid var(--border-primary, #c7c7c7);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    font-weight: 500;
+    outline: none;
+}
+
+.select:hover:not(.select--disabled) {
+    border-color: var(--border-hover, #a0a0a0);
+}
+
+.select:focus {
+    border-color: var(--primary-500, #3b82f6);
+    box-shadow: 0 0 0 3px var(--primary-100, rgba(59, 130, 246, 0.1));
+}
+
+/* Select Text */
+.selectText {
+    flex: 1;
+    text-align: left;
+    color: var(--text-primary, #1c1c1c);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.select--placeholder .selectText {
+    color: var(--text-secondary, #666666);
+}
+
+/* Select Arrow */
+.selectArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-tertiary, #999999);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.select--open .selectArrow {
+    transform: rotate(180deg);
+}
+
+/* Size Variants */
+.select--small {
+    height: 36px;
+    padding: 6px 8px 6px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.select--small .selectArrow {
+    width: 20px;
+    height: 20px;
+}
+
+.select--small .selectArrow svg {
+    width: 20px;
+    height: 20px;
+}
+
+.select--medium {
+    height: 48px;
+    padding: 12px 10px 12px 16px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.select--medium .selectArrow {
+    width: 24px;
+    height: 24px;
+}
+
+.select--medium .selectArrow svg {
+    width: 24px;
+    height: 24px;
+}
+
+.select--large {
+    height: 56px;
+    padding: 16px 12px 16px 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.select--large .selectArrow {
+    width: 28px;
+    height: 28px;
+}
+
+.select--large .selectArrow svg {
+    width: 28px;
+    height: 28px;
+}
+
+/* Variant Styles */
+.select--primary {
+    border-color: var(--primary-300, #93c5fd);
+}
+
+.select--primary:hover:not(.select--disabled) {
+    border-color: var(--primary-400, #60a5fa);
+}
+
+.select--primary:focus {
+    border-color: var(--primary-500, #3b82f6);
+    box-shadow: 0 0 0 3px var(--primary-100, rgba(59, 130, 246, 0.1));
+}
+
+.select--secondary {
+    border-color: var(--secondary-300, #d1d5db);
+    background: var(--secondary-50, #f9fafb);
+}
+
+.select--secondary:hover:not(.select--disabled) {
+    border-color: var(--secondary-400, #9ca3af);
+}
+
+.select--secondary:focus {
+    border-color: var(--secondary-500, #6b7280);
+    box-shadow: 0 0 0 3px var(--secondary-100, rgba(107, 114, 128, 0.1));
+}
+
+.select--tertiary {
+    border-color: var(--tertiary-300, #fde68a);
+    background: var(--tertiary-50, #fffbeb);
+}
+
+.select--tertiary:hover:not(.select--disabled) {
+    border-color: var(--tertiary-400, #fcd34d);
+}
+
+.select--tertiary:focus {
+    border-color: var(--tertiary-500, #f59e0b);
+    box-shadow: 0 0 0 3px var(--tertiary-100, rgba(245, 158, 11, 0.1));
+}
+
+/* States */
+.select--disabled {
+    background: var(--bg-disabled, #f5f5f5);
+    border-color: var(--border-disabled, #e0e0e0);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.select--disabled .selectText {
+    color: var(--text-disabled, #a0a0a0);
+}
+
+.select--disabled .selectArrow {
+    color: var(--text-disabled, #a0a0a0);
+}
+
+.select--error {
+    border-color: var(--error-500, #ef4444);
+}
+
+.select--error:focus {
+    border-color: var(--error-500, #ef4444);
+    box-shadow: 0 0 0 3px var(--error-100, rgba(239, 68, 68, 0.1));
+}
+
+.select--open {
+    border-color: var(--primary-500, #3b82f6);
+    box-shadow: 0 0 0 3px var(--primary-100, rgba(59, 130, 246, 0.1));
+}
+
+/* Dropdown */
+.dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    background: var(--bg-primary, #ffffff);
+    border: 1px solid var(--border-primary, #c7c7c7);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Options */
+.option {
+    padding: 12px 16px;
+    cursor: pointer;
+    font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-primary, #1c1c1c);
+    transition: background-color 0.2s ease;
+}
+
+.option:hover {
+    background: var(--bg-hover, #f3f4f6);
+}
+
+.option--selected {
+    background: var(--primary-50, #eff6ff);
+    color: var(--primary-600, #2563eb);
+    font-weight: 500;
+}
+
+.option--selected:hover {
+    background: var(--primary-100, #dbeafe);
+}
+
+/* Error Message */
+.errorMessage {
+    font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--error-500, #ef4444);
+    margin-top: 4px;
+}
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+    .select {
+        background: var(--bg-primary-dark, #1f2937);
+        border-color: var(--border-primary-dark, #374151);
+    }
+
+    .select:hover:not(.select--disabled) {
+        border-color: var(--border-hover-dark, #4b5563);
+    }
+
+    .selectText {
+        color: var(--text-primary-dark, #f9fafb);
+    }
+
+    .select--placeholder .selectText {
+        color: var(--text-secondary-dark, #9ca3af);
+    }
+
+    .selectArrow {
+        color: var(--text-tertiary-dark, #6b7280);
+    }
+
+    .label {
+        color: var(--text-primary-dark, #f9fafb);
+    }
+
+    .dropdown {
+        background: var(--bg-primary-dark, #1f2937);
+        border-color: var(--border-primary-dark, #374151);
+    }
+
+    .option {
+        color: var(--text-primary-dark, #f9fafb);
+    }
+
+    .option:hover {
+        background: var(--bg-hover-dark, #374151);
+    }
+
+    .option--selected {
+        background: var(--primary-900, #1e3a8a);
+        color: var(--primary-200, #bfdbfe);
+    }
+
+    .option--selected:hover {
+        background: var(--primary-800, #1e40af);
+    }
+
+    .select--secondary {
+        background: var(--secondary-800, #1f2937);
+        border-color: var(--secondary-600, #4b5563);
+    }
+
+    .select--tertiary {
+        background: var(--tertiary-900, #451a03);
+        border-color: var(--tertiary-600, #d97706);
+    }
+
+    .select--disabled {
+        background: var(--bg-disabled-dark, #374151);
+        border-color: var(--border-disabled-dark, #4b5563);
+    }
+
+    .select--disabled .selectText {
+        color: var(--text-disabled-dark, #6b7280);
+    }
+
+    .select--disabled .selectArrow {
+        color: var(--text-disabled-dark, #6b7280);
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .select {
+        border-width: 2px;
+    }
+
+    .select:focus {
+        outline: 2px solid var(--primary-500, #3b82f6);
+        outline-offset: 2px;
+    }
+
+    .option:hover {
+        outline: 2px solid var(--primary-500, #3b82f6);
+        outline-offset: -2px;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .select,
+    .selectArrow,
+    .option {
+        transition: none;
+    }
+}
+
+/* RTL Support */
+[dir="rtl"] .selectText {
+    text-align: right;
+}
+
+[dir="rtl"] .option {
+    text-align: right;
+}

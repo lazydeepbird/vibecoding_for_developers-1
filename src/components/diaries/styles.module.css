@@ -1,0 +1,260 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1168px;
+    margin: 0 auto;
+}
+
+/* Gap 영역들 */
+.gap1 {
+    width: 1168px;
+    height: 32px;
+}
+
+.gap2 {
+    width: 1168px;
+    height: 42px;
+}
+
+.gap3 {
+    width: 1168px;
+    height: 40px;
+}
+
+.gap4 {
+    width: 1168px;
+    height: 40px;
+}
+
+/* Search 영역 - 피그마 디자인 기반 */
+.searchSection {
+    width: 1168px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 좌측 컨텐츠 (드롭다운 + 검색바) */
+.searchContent {
+    width: 1050px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* 필터 선택박스 - 피그마 스펙 적용 */
+.filterSelect {
+    width: 120px !important;
+    height: 48px !important;
+    background-color: var(--color-bg-primary) !important;
+    border: 1px solid var(--color-gray-30) !important;
+    border-radius: 8px !important;
+}
+
+/* 검색 입력 - 피그마 스펙 적용 */
+.searchInput {
+    width: 320px !important;
+    height: 48px !important;
+    border: 1px solid var(--color-gray-30) !important;
+    border-radius: 100px !important;
+}
+
+/* 검색 입력 플레이스홀더 스타일 */
+.searchInput input::placeholder {
+    color: var(--color-gray-40) !important;
+    font-family: var(--typography-font-pretendard) !important;
+    font-weight: var(--typography-weight-medium) !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    letter-spacing: -0.16px !important;
+}
+
+/* 일기쓰기 버튼 - 피그마 스펙 적용 */
+.writeButton {
+    width: 110px !important;
+    height: 48px !important;
+    background-color: var(--color-gray-black) !important;
+    color: var(--color-text-inverse) !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-family: var(--typography-font-pretendard) !important;
+    font-weight: var(--typography-weight-semibold) !important;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    letter-spacing: -0.18px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 4px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+}
+
+.writeButton:hover {
+    background-color: var(--color-gray-90) !important;
+}
+
+/* Main 컨텐츠 영역 */
+.mainSection {
+    width: 1168px;
+    height: 936px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* 일기 그리드 - 3행 4열 */
+.diaryGrid {
+    width: 1168px;
+    display: grid;
+    grid-template-columns: repeat(4, 274px);
+    grid-template-rows: repeat(3, 296px);
+    gap: 24px;
+    align-items: start;
+    justify-items: center;
+}
+
+/* 일기 카드 */
+.diaryCard {
+    width: 274px;
+    height: 296px;
+    background-color: var(--color-bg-primary);
+    border-radius: 16px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.diaryCard:hover {
+    transform: translateY(-2px);
+}
+
+/* 카드 이미지 컨테이너 */
+.cardImageContainer {
+    position: relative;
+    width: 274px;
+    height: 208px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* 카드 이미지 */
+.cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* 닫기 버튼 */
+.closeButton {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--color-bg-primary);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--color-text-primary);
+    transition: background-color 0.2s ease;
+}
+
+.closeButton:hover {
+    background-color: var(--color-bg-secondary);
+}
+
+/* 카드 컨텐츠 */
+.cardContent {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* 카드 정보 (감정 + 날짜) */
+.cardInfo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 감정 태그 */
+.emotionTag {
+    font-family: var(--typography-font-pretendard);
+    font-weight: var(--typography-weight-semibold);
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.14px;
+}
+
+/* 감정별 색상 */
+.emotionTag[data-emotion="sad"] {
+    color: #28B4E1;
+}
+
+.emotionTag[data-emotion="surprise"] {
+    color: #D59029;
+}
+
+.emotionTag[data-emotion="angry"] {
+    color: var(--color-gray-60);
+}
+
+.emotionTag[data-emotion="happy"] {
+    color: #EA5757;
+}
+
+.emotionTag[data-emotion="etc"] {
+    color: #A229ED;
+}
+
+/* 날짜 텍스트 */
+.dateText {
+    font-family: var(--typography-font-pretendard);
+    font-weight: var(--typography-weight-regular);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.14px;
+    color: var(--color-gray-50);
+}
+
+/* 카드 제목 */
+.cardTitle {
+    width: 100%;
+    font-family: var(--typography-font-pretendard);
+    font-weight: var(--typography-weight-bold);
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.18px;
+    color: var(--color-text-primary);
+
+    /* 한 줄만 노출 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Pagination 영역 - 피그마 디자인 기반 */
+.paginationSection {
+    width: 1168px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Pagination 컴포넌트 커스텀 스타일 */
+.paginationSection nav {
+    width: 288px;
+    height: 32px;
+}
